@@ -21,6 +21,7 @@ const steps = [
     body: "Dwello blends creativity with intelligent tech so you can preview rooms in stunning detail.",
     image: "/images/img-6.png",
     imageAlt: "Living room with natural light",
+    featured: false,
   },
   {
     id: "03",
@@ -29,6 +30,7 @@ const steps = [
     body: "From mood boards to floor plans — everything stays connected.",
     image: "/images/img-8.png",
     imageAlt: "Styled interior detail",
+    featured: false,
   },
 ] as const;
 
