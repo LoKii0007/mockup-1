@@ -38,26 +38,13 @@ export function ServicesSection() {
 
                 <div className="flex shrink-0 items-center gap-4 md:gap-8 lg:gap-12">
                   <div className="relative h-[72px] w-[112px] overflow-hidden border border-white/10 shadow-2xl md:hidden">
-                    <AnimatePresence mode="wait">
-                      {active === index && (
-                        <motion.div
-                          key={service.image}
-                          className="absolute inset-0"
-                          initial={{ opacity: 0, scale: 0.95 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          exit={{ opacity: 0, scale: 0.95 }}
-                          transition={{ duration: 0.25, ease: "easeOut" }}
-                        >
-                          <Image
-                            src={service.image}
-                            alt={service.title}
-                            fill
-                            className="object-cover object-center"
-                            sizes="140px"
-                          />
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover object-center"
+                      sizes="140px"
+                    />
                   </div>
 
                   <div className="relative hidden h-[100px] w-[160px] md:block">
