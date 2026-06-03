@@ -12,7 +12,7 @@ export function BentoSection() {
         <div className="grid grid-cols-12">
           <div className="col-span-3" />
           <div className="col-span-6 border-l border-r border-white/10 p-12 text-right text-6xl font-light leading-none tracking-tight text-white select-none">
-            Instant Interior <br /> Magic
+            Instant Room <br /> Makeovers
           </div>
           <div className="col-span-3" />
         </div>
@@ -21,7 +21,7 @@ export function BentoSection() {
           <div className="col-span-3 flex justify-center overflow-hidden">
             <Image
               src="/images/img-6.png"
-              alt="Instant Interior Magic"
+              alt="Instant Room Makeovers"
               width={500}
               height={500}
               className="h-auto w-[500px] max-w-none shrink-0 -translate-x-1/2"
@@ -33,7 +33,7 @@ export function BentoSection() {
             </div>
             <Image
               src="/images/img-7.png"
-              alt="Instant Interior Magic"
+              alt="Instant Room Makeovers"
               width={500}
               height={500}
               className="shrink-0"
@@ -42,7 +42,7 @@ export function BentoSection() {
           <div className="col-span-3 flex justify-center overflow-hidden">
             <Image
               src="/images/img-8.png"
-              alt="Instant Interior Magic"
+              alt="Instant Room Makeovers"
               width={500}
               height={500}
               className="h-auto w-[500px] max-w-none shrink-0 translate-x-1/2"
@@ -54,7 +54,7 @@ export function BentoSection() {
           <div className="col-span-3" />
           <div className="col-span-6 flex items-end justify-between border-l border-r border-white/10 p-12 text-base font-light leading-none tracking-tight">
             <h5>
-              Turn your concepts into <br /> lifelike spaces in moments. <br /> see your{" "}
+              Turn your sketches into <br /> realistic rooms in moments. <br /> see your{" "}
               <span>vision</span> come alive.
             </h5>
             <ArrowUpRightIcon className="h-6 w-6" />
@@ -65,7 +65,7 @@ export function BentoSection() {
         <div className="grid grid-cols-12 border-t border-white/10">
           <div className="col-span-3 flex flex-col justify-between p-12">
             <div className="flex flex-col gap-6 text-base font-light leading-none tracking-tight">
-              <h5>About Homeflow</h5>
+              <h5>About Dwello</h5>
               <ArrowUpRightIcon className="h-6 w-6" />
             </div>
             <div className="text-right text-6xl font-light leading-none tracking-tight text-white opacity-20 select-none">
@@ -74,8 +74,8 @@ export function BentoSection() {
           </div>
           <div className="relative col-span-9 border-l border-white/10 p-12 text-6xl font-light leading-[1.1] tracking-tight">
             <h5>
-              Homeflow combines creativity with intelligent technology to make design
-              simple. Visualize your rooms in stunning detail. Create personalized spaces
+              Dwello combines creativity with intelligent technology to make design
+              simple. Preview your rooms in stunning detail. Create personalized spaces
               with ease and confidence.
             </h5>
             <div className="absolute right-1/3 top-0 h-full border-r border-white/10" />
@@ -90,10 +90,10 @@ export function BentoSection() {
           </div>
           <div className="col-span-9 flex flex-col items-end justify-between gap-8 p-12">
             <h5 className="text-right text-6xl font-light leading-none tracking-tight">
-              All your ideas, <br /> in one platform
+              Every concept, <br /> in one workspace
             </h5>
             <h6 className="text-right text-base font-light leading-[1.1] tracking-tight">
-              Fromm mood boards to <br /> detailed floor plans, Homeflow has you <br />{" "}
+              From mood boards to <br /> detailed floor plans, Dwello has you <br />{" "}
               covered.
             </h6>
           </div>

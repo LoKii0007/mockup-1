@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Homeflow — Inspired Interiors",
+  title: "Dwello — Curated Interiors",
   description:
-    "AI-powered interior design. Visualize your dream home with intelligent layouts and expert styling.",
+    "AI-powered home design. Visualize your ideal space with smart layouts and expert styling guidance.",
 };
 
 export default function RootLayout({

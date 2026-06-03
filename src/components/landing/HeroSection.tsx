@@ -8,22 +8,22 @@ import { images } from "@/lib/images";
 
 const HERO_CARD_TABS = [
   {
-    label: "Design",
+    label: "Plan",
     image: "/images/img-1.jpg",
-    title: ["Create Interior", "Design Seamlessly"],
-    alt: "Interior design workspace preview",
+    title: ["Craft Interior", "Styles Effortlessly"],
+    alt: "Interior styling workspace preview",
   },
   {
-    label: "Interior",
+    label: "Style",
     image: "/images/img-3.jpg",
-    title: ["Visualize Your", "Dream Interior"],
-    alt: "Modern living room interior visualization",
+    title: ["Preview Your", "Ideal Living Space"],
+    alt: "Modern living room interior preview",
   },
   {
-    label: "Calculate",
+    label: "Budget",
     image: "/images/img-4.jpg",
-    title: ["Estimate Costs", "With Confidence"],
-    alt: "Room layout with furniture cost planning",
+    title: ["Plan Budgets", "With Full Clarity"],
+    alt: "Room layout with furniture budget planning",
   },
 ] as const;
 
@@ -144,12 +144,12 @@ function PopularStylesCard({ className = "" }: { className?: string }) {
       </div>
       <div>
         <p className="text-sm sm:text-base font-medium leading-snug text-white/90">
-          Top 10 popular styles in
+          Top 10 trending styles in
           <br />
-          interior design
+          home design
         </p>
         <p className="mt-1.5 text-xs text-white/50 font-light">
-          Modern loft style designs
+          Scandinavian home layouts
         </p>
       </div>
     </motion.div>
@@ -179,12 +179,12 @@ export function HeroSection() {
         <div className="mt-20 md:mt-0 flex flex-1 flex-col justify-center">
           <FadeIn>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-light leading-[1.1] tracking-[-2px] text-white select-none">
-              Design Your Dream Home
+              Build Your Perfect Space
               <br />
-              with Homelyflow.ai
+              with Dwello.ai
             </h1>
             <p className="mt-6 text-base sm:text-lg leading-relaxed text-white/70 max-w-xl font-light">
-              Formalia gives you effortless visualization, smart furniture pairing,
+              Dwello gives you seamless visualization, smart décor pairing,
               and expert guidance—all in one place.
             </p>
             <div className="mt-8 flex">
@@ -193,7 +193,7 @@ export function HeroSection() {
                 className="inline-flex cursor-pointer rounded-xl bg-white/90 hover:bg-white text-zinc-950 px-8 py-3.5 text-sm font-medium transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]"
                 whileTap={{ scale: 0.98 }}
               >
-                Let&apos;s explore now
+                Start designing today
               </motion.button>
             </div>
           </FadeIn>
@@ -208,12 +208,12 @@ export function HeroSection() {
         <div className="flex flex-1 flex-col justify-center">
           <FadeIn>
             <h1 className="text-3xl font-light leading-[1.1] tracking-tight text-white select-none sm:text-5xl">
-              Design Your Dream Home
+              Build Your Perfect Space
               <br />
-              with Homelyflow.ai
+              with Dwello.ai
             </h1>
             <p className="mt-4 max-w-xl text-sm font-light leading-relaxed text-white/70 sm:mt-6 sm:text-lg">
-              Formalia gives you effortless visualization, smart furniture pairing,
+              Dwello gives you seamless visualization, smart décor pairing,
               and expert guidance—all in one place.
             </p>
             <div className="mt-6 flex sm:mt-8">
@@ -222,7 +222,7 @@ export function HeroSection() {
                 className="inline-flex cursor-pointer rounded-xl bg-white/90 px-6 py-3 text-sm font-medium text-zinc-950 shadow-lg transition-all hover:scale-[1.02] hover:bg-white hover:shadow-xl sm:px-8 sm:py-3.5"
                 whileTap={{ scale: 0.98 }}
               >
-                Let&apos;s explore now
+                Start designing today
               </motion.button>
             </div>
           </FadeIn>

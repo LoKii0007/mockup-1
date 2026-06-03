@@ -7,25 +7,25 @@ import { FadeIn } from "./FadeIn";
 const steps = [
   {
     id: "01",
-    label: "Visualize",
-    title: "See your vision come alive",
-    body: "Turn concepts into lifelike spaces in moments.",
+    label: "Preview",
+    title: "Watch your vision take shape",
+    body: "Turn sketches into realistic rooms in moments.",
     image: "/images/img-7.png",
-    imageAlt: "Modern interior visualization",
+    imageAlt: "Modern interior preview",
     featured: true,
   },
   {
     id: "02",
     label: "About",
-    title: "Design made simple",
-    body: "Homeflow blends creativity with intelligent tech so you can visualize rooms in stunning detail.",
+    title: "Styling made simple",
+    body: "Dwello blends creativity with intelligent tech so you can preview rooms in stunning detail.",
     image: "/images/img-6.png",
     imageAlt: "Living room with natural light",
   },
   {
     id: "03",
-    label: "Platform",
-    title: "All your ideas, one place",
+    label: "Workspace",
+    title: "Every concept, one place",
     body: "From mood boards to floor plans — everything stays connected.",
     image: "/images/img-8.png",
     imageAlt: "Styled interior detail",
@@ -43,7 +43,7 @@ export function BentoSectionMobile() {
           <h2 className="mt-3 max-w-[12ch] text-[2.35rem] font-light leading-[0.95] tracking-tight text-white">
             Instant
             <br />
-            Interior Magic
+            Room Makeovers
           </h2>
         </FadeIn>
 
@@ -65,7 +65,7 @@ export function BentoSectionMobile() {
                     STEP 01
                   </span>
                   <p className="mt-2 text-sm font-light leading-snug text-white/90">
-                    Lifelike spaces in moments
+                    Realistic rooms in moments
                   </p>
                 </div>
                 <span className="text-5xl font-light leading-none text-white/15">01</span>
@@ -97,7 +97,7 @@ export function BentoSectionMobile() {
         <FadeIn delay={0.12} className="mt-3">
           <div className="flex items-center justify-between gap-4 rounded-xl border border-white/10 bg-zinc-950/80 px-4 py-3.5">
             <p className="text-xs font-light leading-relaxed text-zinc-300">
-              Turn concepts into spaces. See your{" "}
+              Turn sketches into rooms. See your{" "}
               <span className="text-white">vision</span> come alive.
             </p>
             <ArrowUpRightIcon className="h-5 w-5 shrink-0 text-white/70" />
@@ -156,9 +156,9 @@ export function BentoSectionMobile() {
       <FadeIn className="mx-4 mb-10 rounded-2xl border border-dashed border-white/15 bg-white/[0.02] p-5 sm:mx-6">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="text-[10px] uppercase tracking-[0.2em] text-zinc-500">Homeflow</p>
+            <p className="text-[10px] uppercase tracking-[0.2em] text-zinc-500">Dwello</p>
             <h3 className="mt-2 text-lg font-light leading-snug text-white">
-              One platform for every room you imagine
+              One workspace for every room you imagine
             </h3>
           </div>
           <span className="text-3xl font-light text-white/20">∞</span>

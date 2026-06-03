@@ -27,10 +27,10 @@ export function PortfolioSection() {
         {/* Centered Portfolio Section Title */}
         <FadeIn className="text-center mb-16">
           <p className="text-xs uppercase tracking-[0.25em] text-zinc-500 font-medium select-none">
-            Our Portfolio
+            Featured Work
           </p>
           <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white select-none">
-            Creative Spaces, Powered by AI
+            Bold Interiors, Shaped by AI
           </h2>
         </FadeIn>
 
@@ -142,7 +142,7 @@ export function PortfolioSection() {
                 What Our Clients Say
               </p>
               <h2 className="mt-4 max-w-md text-2xl font-light leading-snug tracking-tight text-white sm:text-3xl lg:text-4xl select-none">
-                Specific, high-trust headline using the location.
+                Real stories from homeowners worldwide.
               </h2>
             </div>
             <div className="mt-10 lg:mt-0">

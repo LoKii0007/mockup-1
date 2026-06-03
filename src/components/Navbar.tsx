@@ -17,8 +17,8 @@ export default function Navbar() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <a href="#home" className="flex items-center text-white" aria-label="Homeflow Logo">
-          <span className="text-3xl font-bold">H</span>
+        <a href="#home" className="flex items-center text-white" aria-label="Dwello Logo">
+          <span className="text-3xl font-bold">D</span>
         </a>
 
         <nav className="hidden items-center gap-x-10 text-sm font-medium tracking-wide md:flex">
