@@ -1,6 +1,6 @@
 /** Paths must match files in public/images */
 export const images = {
-  hero: "/images/hero.jpg",
+  hero: "/images/hero.png",
   portfolio: "/images/img-1.jpg",
   gallery: "/images/img-2.jpg",
   services: "/images/img-3.jpg",

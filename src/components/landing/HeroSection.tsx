@@ -53,11 +53,10 @@ function HeroDesignCard({ className = "" }: { className?: string }) {
               key={tab.label}
               type="button"
               onClick={() => selectTab(i)}
-              className={`relative z-10 rounded-full px-3 py-1 font-medium tracking-wide transition-colors duration-200 ${
-                activeTab === i
-                  ? "text-white"
-                  : "text-white/40 hover:text-white/65"
-              }`}
+              className={`relative z-10 rounded-full px-3 py-1 font-medium tracking-wide transition-colors duration-200 ${activeTab === i
+                ? "text-white"
+                : "text-white/40 hover:text-white/65"
+                }`}
             >
               {activeTab === i && (
                 <motion.span
@@ -162,7 +161,7 @@ export function HeroSection() {
       id="home"
       className="relative min-h-screen w-full overflow-hidden bg-zinc-950 text-white flex flex-col justify-between"
     >
-      <div className="absolute inset-0 z-0">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, ease: "easeInOut" }} className="absolute inset-0 z-0">
         <Image
           src={images.hero}
           alt="Luxury modern living room with wood slat paneling"
@@ -172,7 +171,7 @@ export function HeroSection() {
           priority
         />
         <div className="absolute inset-0 bg-black/45" />
-      </div>
+      </motion.div>
 
       {/* Desktop — original absolute layout */}
       <div className="relative hidden min-h-dvh w-full items-center p-12 lg:flex">

@@ -3,16 +3,36 @@
 import Image from "next/image";
 import { ArrowUpRightIcon } from "lucide-react";
 import { BentoSectionMobile } from "./BentoSectionMobile";
+import { motion } from "framer-motion";
+import React, { HtmlHTMLAttributes, useEffect, useRef, useState } from "react";
 
 export function BentoSection() {
+  const [pos, setPos] = useState({ top: 0, left: 0, origin: "center center" })
+
+  const handleMouse = (e: any) => {
+    const rect = e.currentTarget.getBoundingClientRect()
+    const left = ((e.clientX - rect.left) / rect.width) * 100
+    const top = ((e.clientY - rect.top) / rect.height) * 100
+    let origin = "center center"
+    
+    setPos({ top, left, origin })
+  }
+
   return (
     <section id="features" className="bg-black text-white pt-4">
       {/* Desktop — original 12-column grid */}
       <div className="hidden border-t border-white/10 lg:flex lg:flex-col">
         <div className="grid grid-cols-12">
-          <div className="col-span-3" />
-          <div className="col-span-6 border-l border-r border-white/10 p-12 text-right text-6xl font-light leading-none tracking-tight text-white select-none">
+          <div className="col-span-3 group relative overflow-hidden" >
+          </div>
+          <div onMouseEnter={handleMouse} className="col-span-6 relative group border-l border-r border-white/10 p-12 text-right text-6xl font-light leading-none tracking-tight text-white select-none">
             Instant Room <br /> Makeovers
+            <motion.div
+              style={{
+                top: `${pos.top}%`,
+                left: `${pos.left}%`
+              }}
+              className="absolute rounded-full bg-white group-hover:w-full group-hover:h-full transition-all origin-center "></motion.div>
           </div>
           <div className="col-span-3" />
         </div>
