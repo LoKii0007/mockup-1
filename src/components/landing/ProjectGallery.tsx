@@ -17,18 +17,20 @@ export function ProjectGallery() {
   return (
     <section id="projects" className="overflow-x-hidden bg-black text-white py-16 md:py-24">
       <div className="px-6 sm:px-8 md:px-12">
-        <FadeIn className="mb-8 flex flex-col gap-6 md:mb-12 md:flex-row md:items-end md:justify-between lg:mb-16">
-          <h2 className="text-2xl font-light leading-[1.15] tracking-tight text-white select-none sm:text-4xl md:text-5xl">
+        <div className="mb-8 flex flex-col gap-6 md:mb-12 md:flex-row md:items-end md:justify-between lg:mb-16">
+          <FadeIn x="-100%" isolateInView className="text-2xl font-light leading-[1.15] tracking-tight text-white select-none sm:text-4xl md:text-5xl">
             Transforming Daily
             <br />
             Life Through Design
-          </h2>
-          <ArrowLink
-            label="View Project"
-            href="#showcase"
-            className="shrink-0 self-start text-sm font-medium md:self-auto"
-          />
-        </FadeIn>
+          </FadeIn>
+          <FadeIn x="100%" isolateInView className="shrink-0 self-start text-sm font-medium md:self-auto">
+            <ArrowLink
+              label="View Project"
+              href="#showcase"
+              className=""
+            />
+          </FadeIn>
+        </div>
 
         <div
           style={galleryVars}

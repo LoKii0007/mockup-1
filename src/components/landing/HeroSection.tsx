@@ -41,10 +41,10 @@ function HeroDesignCard({ className = "" }: { className?: string }) {
 
   return (
     <motion.div
-      className={`rounded-2xl border border-white/10 bg-zinc-950/40 p-5 backdrop-blur-xl shadow-2xl flex flex-col justify-between gap-5 w-full sm:w-80 ${className}`}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.6, duration: 0.8 }}
+      className={`rounded-2xl border border-white/10 bg-zinc-950/40 p-5 shadow-2xl flex flex-col justify-between gap-5 w-full sm:w-80 ${className}`}
+      initial={{ backdropFilter: "blur(0px)", opacity: 0, x: "100%" }}
+      animate={{ backdropFilter: "blur(10px)", opacity: 1, x: "0%" }}
+      transition={{ delay: 0, duration: 0.5, ease: "easeOut" }}
     >
       <div className="flex items-center justify-between gap-3">
         <div className="relative flex gap-1 text-xs">
@@ -121,16 +121,18 @@ function HeroDesignCard({ className = "" }: { className?: string }) {
         </div>
       </div>
     </motion.div>
+
   );
 }
 
 function PopularStylesCard({ className = "" }: { className?: string }) {
   return (
+
     <motion.div
-      className={`flex items-center gap-4 rounded-2xl border border-white/10 bg-zinc-950/40 p-4 backdrop-blur-xl shadow-2xl ${className}`}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.4, duration: 0.8 }}
+      initial={{ backdropFilter: "blur(0px)", opacity: 0, x: "-100%" }}
+      animate={{ backdropFilter: "blur(10px)", opacity: 1, x: "0%" }}
+      transition={{ delay: 0, duration: 0.5, ease: "easeOut" }}
+      className={`flex items-center gap-4 rounded-2xl border border-white/10 bg-zinc-950/40  p-4 ${className}`}
     >
       <div className="relative h-16 w-20 shrink-0 overflow-hidden rounded-xl">
         <Image
@@ -161,7 +163,13 @@ export function HeroSection() {
       id="home"
       className="relative min-h-screen w-full overflow-hidden bg-zinc-950 text-white flex flex-col justify-between"
     >
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, ease: "easeInOut" }} className="absolute inset-0 z-0">
+      <motion.div initial={{ opacity: 0, scale: 1.2 }} animate={{ opacity: 1, scale: 1 }}
+        // transition={{
+        //   opacity: { duration: 1, ease: "easeInOut" },
+        //   scale: { duration: 2, ease: "easeInOut", delay: 0 }
+        // }}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute inset-0 z-0">
         <Image
           src={images.hero}
           alt="Luxury modern living room with wood slat paneling"
@@ -176,7 +184,7 @@ export function HeroSection() {
       {/* Desktop — original absolute layout */}
       <div className="relative hidden min-h-dvh w-full items-center p-12 lg:flex">
         <div className="mt-20 md:mt-0 flex flex-1 flex-col justify-center">
-          <FadeIn>
+          <FadeIn opacity={0}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-light leading-[1.1] tracking-[-2px] text-white select-none">
               Build Your Perfect Space
               <br />
@@ -199,7 +207,9 @@ export function HeroSection() {
         </div>
 
         <PopularStylesCard className="absolute bottom-12 left-12" />
+
         <HeroDesignCard className="absolute bottom-12 right-12 w-[min(100%,22rem)]" />
+
       </div>
 
       {/* Mobile / tablet — stacked layout */}
@@ -228,8 +238,20 @@ export function HeroSection() {
         </div>
 
         <div className="mt-10 flex flex-col gap-4 sm:gap-6">
-          <PopularStylesCard />
-          <HeroDesignCard />
+          <motion.div
+            initial={{ opacity: 0, x: "-100%" }}
+            animate={{ opacity: 1, x: "0%" }}
+            transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
+          >
+            <PopularStylesCard />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: "0%" }}
+            transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
+          >
+            <HeroDesignCard />
+          </motion.div>
         </div>
       </div>
     </section>
